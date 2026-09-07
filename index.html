@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FB99.com অ্যাপ ডাউনলোড FB99.com বাংলাদেশ লগইন নিবন্ধন</title>
+    
+    <!-- Google Search Console & SEO Meta Tags for fb99.lol -->
+    <meta name="google-site-verification" content="এখানে_আপনার_গুগল_সার্চ_কনসোল_ভেরিফিকেশন_কোডটি_বসাবেন">
+    <meta name="description" content="FB99 Official Site - FB99.lol বাংলাদেশ লগইন, নিবন্ধন এবং অ্যাপ ডাউনলোড করুন।">
+    <link rel="canonical" href="https://fb99.lol">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f0f2f5;
+            color: #333;
+            padding-top: 55px;
+            padding-bottom: 130px;
+        }
+        /* Top Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #d32f2f;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 15px;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .top-favicon {
+            height: 32px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .btn {
+            padding: 5px 12px;
+            border: none;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn-login {
+            background-color: #ffeb3b;
+            color: #b71c1c;
+        }
+        .btn-signup {
+            background-color: #ff9800;
+            color: white;
+        }
+
+        /* Top Banner Section */
+        .top-banner-container {
+            padding: 10px 10px 0 10px;
+        }
+        .top-banner-card {
+            background: white;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+        }
+
+        /* Quick Action Icons */
+        .quick-actions {
+            display: flex;
+            justify-content: space-around;
+            background: white;
+            padding: 15px 5px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border: 1px solid #ddd;
+        }
+        .action-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 11px;
+            color: #333;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .action-item i {
+            font-size: 18px;
+            margin-bottom: 5px;
+            background: #ffebee;
+            color: #d32f2f;
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+        /* Banner & Offer Sections */
+        .content-container {
+            padding: 0 10px 10px 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .offer-card {
+            background: white;
+            border-radius: 8px;
+            padding: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+        }
+
+        .offer-title {
+            font-size: 13px;
+            font-weight: bold;
+            color: #222;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .offer-title i {
+            color: #d32f2f;
+            font-size: 14px;
+        }
+
+        .banner-img {
+            width: 100%;
+            max-height: 140px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 1px solid rgba(0,0,0,0.1);
+            display: block;
+        }
+
+        /* Details Content Box for Image 3 */
+        .offer-details {
+            margin-top: 12px;
+            font-size: 12px;
+            color: #444;
+            line-height: 1.6;
+            background-color: #fafafa;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #eee;
+        }
+
+        .detail-link {
+            color: #e65100;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 6px;
+        }
+
+        .detail-heading {
+            font-weight: bold;
+            color: #d32f2f;
+            margin-top: 8px;
+            margin-bottom: 3px;
+        }
+
+        /* Table inside offer details */
+        .offer-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 8px;
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .offer-table th, .offer-table td {
+            border: 1px solid #ff9800;
+            padding: 5px;
+        }
+
+        .offer-table th {
+            background-color: #ff9800;
+            color: white;
+        }
+
+        .offer-table td {
+            background-color: #fff8e1;
+        }
+
+        .offer-footer {
+            font-size: 11px;
+            color: #777;
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-6px);
+            }
+            60% {
+                transform: translateY(-3px);
+            }
+        }
+
+        .bottom-download-bar {
+            position: fixed;
+            bottom: 55px;
+            left: 0;
+            width: 100%;
+            background: rgba(211, 47, 47, 0.95);
+            padding: 10px 15px;
+            text-align: center;
+            z-index: 999;
+            box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+        }
+
+        .download-btn {
+            background-color: #ffeb3b;
+            color: #b71c1c;
+            padding: 10px 30px;
+            border-radius: 25px;
+            font-size: 15px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            text-decoration: none;
+            display: inline-block;
+            animation: bounce 1.5s infinite;
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #222;
+            display: flex;
+            justify-content: space-around;
+            padding: 8px 0;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            font-size: 11px;
+        }
+        .nav-item i {
+            font-size: 18px;
+            margin-bottom: 2px;
+        }
+        .nav-item.active {
+            color: #ffeb3b;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Header -->
+    <div class="header">
+        <div class="header-left">
+            <!-- লোগো ফাইল নেম -->
+            <img src="10247_3.jpg" alt="FB99 Logo" class="top-favicon">
+        </div>
+        <div class="header-right">
+            <a href="Http://fb99vip.fb9911.com/?referralCode=oos7992" class="btn btn-login">লগইন</a>
+            <a href="Http://fb99vip.fb9911.com/?referralCode=oos7992" class="btn btn-signup">সাইন আপ</a>
+        </div>
+    </div>
+
+    <!-- টপ ব্যানার -->
+    <div style="margin-top: 10px;"></div>
+    <div class="top-banner-container">
+        <div class="top-banner-card">
+            <div class="offer-title">
+                <span>FB99 একটি বিশেষ ঘোষণা আপনার জমার উপরে ১৬৬৬৬ টাকা বোনাস পেতে পারেন </span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <a href="Http://fb99vip.fb9911.com/?referralCode=oos7992">
+                <img src="10245_2.jpg" alt="Top Banner" class="banner-img">
+            </a>
+            <div class="offer-footer">
+                <i class="fa-regular fa-clock"></i> 2026/08/24-Long term
+            </div>
+        </div>
+    </div>
+
+    <!-- ডিপোজিট, উইথড্র ইত্যাদি ৪টি বাটন -->
+    <div class="quick-actions">
+        <a href="Http://fb99vip.fb9911.com/?referralCode=oos7992" class="action-item">
+            <i class="fa-solid fa-wallet"></i>
+            <span>ডিপোজিট</span>
+        </a>
+        <a href="Http://fb99vip.fb9911.com/?referralCode=oos7992" class="action-item">
+            <i class="fa-solid fa-money-bill-transfer"></i>
+            <span>উইথড্র</span>
+        </a>
+        <a href="Http://fb99vip.fb9911.com/?referralCode=oos7992" class="action-item">
+            <i class="fa-solid fa-crown"></i>
+            <span>ভিআইপি</span>
+        </a>
+        <a href="Http://fb99vip.fb9911.com/?referralCode=oos7992" class="action-item">
+            <i class="fa-solid fa-headset"></i>
+            <span>সাপোর্ট</span>
+        </a>
+    </div>
+
+    <!-- অন্যান্য ব্যানার বা কার্ডসমূহ -->
+    <div class="content-container">
+        
+        <!-- কার্ড ২ -->
+        <div class="offer-card">
+            <div class="offer-title">
+                <span>FB99 APP বোনাস ৮৯,১৯৯ ডাউনলোড বোনাস </span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <a href="Http://fb99vip.fb9911.com/?referralCode=oos7992">
+                <img src="10244_2.jpg" alt="Offer 2" class="banner-img">
+            </a>
+            <div class="offer-footer">
+                <i class="fa-regular fa-clock"></i> 2026/08/24-Long term
+            </div>
+        </div>
+
+        <!-- কার্ড ৩ -->
+        <div class="offer-card">
+            <div class="offer-title">
+                <span>FB99 </span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <a href="Http://fb99vip.fb9911.com/?referralCode=oos7992">
+                <img src="10243_2.jpg" alt="Offer 3" class="banner-img">
+            </a>
+            
+            <div class="offer-details">
+                <a href="Http://fb99vip.fb9911.com/?referralCode=oos7992" class="detail-link"><i class="fa-solid fa-mobile-screen"></i> ক্লিক করুন: WhatsApp</a><br>
+                <a href="Http://fb99vip.fb9911.com/?referralCode=oos7992" class="detail-link"><i class="fa-solid fa-paper-plane"></i> ক্লিক করুন: Telegram</a>
+                
+                <div class="detail-heading">🔺 অফার বিস্তারিত</div>
+                <p>* প্রতিটি রেড এনভেলপের মোট পরিমাণ ২,০০,০০০ টাকা। একজন সদস্য সর্বোচ্চ ৮৮৮৮,৮৮৮ পর্যন্ত রেড এনভেলপ পেতে পারেন।</p>
+                
+                <div class="detail-heading">কিভাবে এটি পেতে</div>
+                <p>✅ নির্ধারিত সময়ে লগইন করুন এবং হোমপেজের ডান নিচের লাল আইকনে ক্লিক করুন বোনাস পাওয়ার জন্য।</p>
+                <p>✅ আপনি যদি নির্ধারিত সময় মিস করেন, তবে আপনাকে পরবর্তী চক্র শুরু হওয়া পর্যন্ত অপেক্ষা করতে হবে।</p>
+
+                <table class="offer-table">
+                    <tr>
+                        <th>শর্তাধীন</th>
+                        <th>সময়</th>
+                        <th>পুরস্কার</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="10">সকল সদস্য দ্বারা FB99 APP ডাউনলোড করেছেন</td>
+                        <td>০০:০০-০০:৫৯</td>
+                        <td rowspan="10">ভাগ্যবান লাল খাম বোনাস পর্যন্ত হতে পারে উ ৮৮৮৮, ৮৮৮ আর আপনি আমানত, উত্তোলর বোনাস🎵  FB9️⃣9️⃣
+                                           🎵🎵🎵🎵
+
+ ➡️FB9️⃣9️⃣ 💫🅰️🤩🤩ডাউনলোড করুন, বিশাল পুরস্কার জিতে নিন! 
+
+➡️ এখনই ডাউনলোড করুন এবং জিতে নিন সর্বোচ্চ ৳9️⃣9️⃣9️⃣9️⃣ আকর্ষণীয় পুরস্কার!
+চমকপ্রদ অফার চলছেই—যত দ্রুত যোগ দেবেন, তত বেশি পুরস্কার! 
+
+➡️ নতুন ব্যবহারকারীদের জন্য বিশেষ সুবিধা🦄🦄
+
+🎵 অফিসিয়াল 🅰️🤩🤩ডাউনলোড করে রেজিস্ট্রেশন সম্পন্ন করুন এবং সঙ্গে সঙ্গে পান ৳৫৯ রেজিস্ট্রেশন বোনাস!
+
+➡️ অফিসিয়াল প্ল্যাটফর্ম থেকে 🅰️🤩🤩ডাউনলোড করুন
+➡️রেজিস্ট্রেশন সম্পন্ন করে খেলা শুরু করুন
+➡️ পুরস্কার ১২ ঘণ্টার মধ্যে স্বয়ংক্রিয়ভাবে আপনার রিওয়ার্ড সেন্টারে পাঠানো হবে
+
+➡️ সুযোগ সীমিত, এখনই যোগ দিন!
+➡️ যত তাড়াতাড়ি ডাউনলোড, তত দ্রুত পুরস্কার!
+➡️ আপনার জন্য বিশেষ সুবিধা অপেক্ষা করছে!
+
+🔗🔗 আজকের রিডিম কোড অপেক্ষা করছে!
+vip০                    ECHTNCIDK2QU
+vip১-৩               7BGKVNSQ
+vip৪-۱۰             XACNW
+vip১১-২০          MXYY7UJIT79
+vip২১-২৯         4N2AUBY5MTJB
+vip৩০-৩৬       SQXSIH0ED2V4RFC
+
+✨FB9️⃣9️⃣-এর সাথে শুরু হোক আপনার সৌভাগ্যের যাত্রা! 💫💫</td>
+                    </tr>
+                    <tr><td>০২:০০-০২:৫৯</td></tr>
+                    <tr><td>০৪:০০-০৪:৫৯</td></tr>
+                    <tr><td>০৬:০০-০৬:৫৯</td></tr>
+                    <tr><td>০৮:০০-০৮:৫৯</td></tr>
+                    <tr><td>১০:০০-১০:৫৯</td></tr>
+                    <tr><td>১২:০০-১২:৫৯</td></tr>
+                    <tr><td>১৪:০০-১৪:৫৯</td></tr>
+                    <tr><td>১৬:০০-১৬:৫৯</td></tr>
+                    <tr><td>১৮:০০-১৮:৫৯</td></tr>
+                </table>
+
+                <div class="detail-heading" style="margin-top: 8px;">শর্তাবলী</div>
+                <p>১. প্রতিটি সদস্য কেবল একবারই এই বোনাস নিতে পারবেন। যদি একই আইপি ঠিকানা, ব্যাংক কার্ড বা মোবাইল নম্বর একাধিকবার ব্যবহৃত হয়। FB99 সমস্ত পুরস্কার. FB9️⃣9️⃣
+ ✨✨✨✨🌟🌟🌟🌟🎵🎵🎵🎵❤️❤️❤️❤️                        
+🤩🤩🤩🤩❤️❤️❤️❤️🎰🎰🎰🎰✨✨✨✨
+🤩🤩🤩🤩❤️❤️❤️❤️🎰🎰🎰🎰✨✨✨✨
+🤩🤩🤩🤩❤️❤️❤️❤️🎰🎰🎰🎰✨✨✨✨
+🤩🤩🤩🤩❤️❤️❤️❤️🎰🎰🎰🎰✨✨✨✨
+
+👉 নতুন সদস্যদের বিশেষ ডিপোজিট বোনাস! 🦄🦄
+
+👉রেজিস্ট্রেশনেই পান ৳১৯ ফ্রি বোনাস, উত্তোলনের সীমা পর্যন্ত ৳৩০০!
+
+➡️ সহজে বোনাস পাওয়ার ধাপ🦄🦄
+
+➡️আপনার মোবাইল নম্বর এবং ওয়ালেট (BKash/Nagad) যোগ করুন, সাথে সাথে পান ৳19 ফ্রি বোনাস
+➡️শর্ত পূরণ করলে উত্তোলন করতে পারবেন সর্বোচ্চ ৳২০০-৩০০!
+
+🎵🎵 সীমিত সময়ের সুবিধা: যত তাড়াতাড়ি রেজিস্ট্রেশন, তত তাড়াতাড়ি বোনাস উপভোগ করুন!
+🔗🔗 আজকের রিডিম কোড অপেক্ষা করছে!
+vip০                    CHLJQ8KERS
+vip১-৩                DFFIPXMA6
+vip৪-১০              6BFOJMJJUC5URGB
+vip১১-২০           DBRJHON
+vip২১-২৯          BZFWN
+vip৩০-৩৬        D61XHHR
+
+➡️সীমিত সময়, আজই রিডিম করুন!🦄🦄
+➡️এবারই সুযোগ নিন, পুরস্কার আপনার হাতেই আসুক!</p>
+            </div>
+
+            <div class="offer-footer">
+                <i class="fa-regular fa-clock"></i> 2026/08/24-Long term
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bottom Fixed Download Button -->
+    <div class="bottom-download-bar">
+        <a href="Http://fb99vip.fb9911.com/?referralCode=oos7992" class="download-btn"><i class="fa-solid fa-download"></i> অ্যাপ ডাউনলোড করুন</a>
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <div class="bottom-nav">
+        <a href="Http://fb99vip.fb9911.com/?referralCode=oos7992" class="nav-item active">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+        </a>
+        <a href="Http://fb99vip.fb9911.com/?referralCode=oos7992" class="nav-item">
+            <i class="fa-solid fa-gift"></i>
+            <span>Promotion</span>
+        </a>
+        <a href="Http://fb99vip.fb9911.com/?referralCode=oos7992" class="nav-item">
+            <i class="fa-solid fa-user-plus"></i>
+            <span>Invite</span>
+        </a>
+        <a href="Http://fb99vip.fb9911.com/?referralCode=oos7992" class="nav-item">
+            <i class="fa-solid fa-award"></i>
+            <span>Reward</span>
+        </a>
+        <a href="Http://fb99vip.fb9911.com/?referralCode=oos7992" class="nav-item">
+            <i class="fa-solid fa-user"></i>
+            <span>Member</span>
+        </a>
+    </div>
+
+</body>
+</html>
